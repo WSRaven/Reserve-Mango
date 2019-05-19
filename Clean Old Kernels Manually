@@ -1,0 +1,11 @@
+1: reboot system to be sure it's using the latest kernel
+2: open terminal and check the current kernel with
+    uname -r
+    DO NOT REMOVE THIS KERNEL
+3: use the command below to view/list all installed kernels
+    dpkg --list 'linux-image-*'
+4: find all the kernels lower than the current one and run the following command to remove them
+    sudo apt-get purge linux-image-x.x.x-x-generic
+5: run the below command to update grub2
+    sudo update-grub2
+6: reboot :)
