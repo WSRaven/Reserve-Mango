@@ -1,0 +1,3 @@
+service network-manager stop
+service network-manager start
+reboot
